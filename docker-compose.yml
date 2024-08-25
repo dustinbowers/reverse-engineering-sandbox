@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  sandbox:
+    container_name: exploit-sandbox
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./drive:/app/drive
+      - ./config/.gdbinit:/root/.gdbinit
+      - ./config/.bashrc:/root/.bashrc
+
