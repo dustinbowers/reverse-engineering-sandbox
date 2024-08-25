@@ -13,13 +13,13 @@ A `drive/` directory is mounted from the host directory into `/app/drive`
 ### Tools
 
 - build-essential
-- GDB
-- Pwndbg extension for GDB
-- PEDA extension for GDB
-- Ropper
-- ROPgadget
-- Radare2
+- [GDB](https://sourceware.org/gdb/)
+- [Pwndbg](https://github.com/pwndbg/pwndbg) extension for GDB
+- [PEDA](https://github.com/longld/peda) extension for GDB
+- [Ropper](https://github.com/sashs/Ropper)
+- [ROPgadget](https://github.com/JonathanSalwan/ROPgadget)
+- [Radare2](https://github.com/radareorg/radare2)
 
 ### Libraries
 
-- pwntools
+- [pwntools](https://docs.pwntools.com/en/stable/)
