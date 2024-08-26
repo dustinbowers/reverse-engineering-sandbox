@@ -18,7 +18,7 @@ docker compose run sandbox /bin/bash
 - Build: `docker compose up --build`  
 - Run: `./run_shell.sh` (wrapper for `docker compose run sandbox /bin/bash`)  
   
-The `drive/` directory is mounted from the host directory into `/app/drive`
+The host `drive/` directory is mounted into the container at `/app/drive`
 
 ### Helpful aliases
 
