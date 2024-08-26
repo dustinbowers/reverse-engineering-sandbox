@@ -3,7 +3,7 @@ FROM python
 WORKDIR /app
 
 RUN apt-get update \
-        && apt-get install git -y
+        && apt-get install git vim -y
 
 RUN apt-get install build-essential -y
 
