@@ -2,11 +2,19 @@
 
 A simple sandbox with common debugging tools and a mounted `drive/` directory.
 
+### Easy Start
+
+```
+git clone https://github.com/dustinbowers/debug-sandbox
+cd debug-sandbox
+docker compose up --build
+docker compose run sandbox /bin/bash
+```
 
 ## Usage
 
 Build: `docker compose up --build`  
-Run: `./run_shell.sh` (wrapper for `docker compose run /bin/bash`)  
+Run: `./run_shell.sh` (wrapper for `docker compose run sandbox /bin/bash`)  
   
 A `drive/` directory is mounted from the host directory into `/app/drive`
 
