@@ -2,7 +2,9 @@
 
 A simple sandbox with common debugging tools and a mounted `drive/` directory.
 
-### Easy Start
+useful aliases will be added in due-time
+
+### Quick Start
 
 ```
 git clone https://github.com/dustinbowers/debug-sandbox
@@ -13,12 +15,20 @@ docker compose run sandbox /bin/bash
 
 ## Usage
 
-Build: `docker compose up --build`  
-Run: `./run_shell.sh` (wrapper for `docker compose run sandbox /bin/bash`)  
+- Build: `docker compose up --build`  
+- Run: `./run_shell.sh` (wrapper for `docker compose run sandbox /bin/bash`)  
   
-A `drive/` directory is mounted from the host directory into `/app/drive`
+The `drive/` directory is mounted from the host directory into `/app/drive`
 
-### Tools
+### Helpful aliases
+
+- `dbg_protections <binary>`
+- `dbg_strings <binary>`
+- `dbg_functions_all <binary>`
+- `dbg_functions_imported <binary>`
+- `dbg_functions_user <binary>`
+
+### Included Tools
 
 - build-essential
 - [GDB](https://sourceware.org/gdb/)
