@@ -9,6 +9,5 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./drive:/app/drive
-      - ./config/.gdbinit:/root/.gdbinit
-      - ./config/.bashrc:/root/.bashrc
+      - ./config:/app/.config
 

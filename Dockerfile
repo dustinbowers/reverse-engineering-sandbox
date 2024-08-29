@@ -34,3 +34,7 @@ RUN git clone https://github.com/longld/peda.git
 RUN git clone https://github.com/radareorg/radare2 \
         && radare2/sys/install.sh
 
+# Create symlinks
+RUN ln -sf /app/.config/.gdbinit /root/.gdbinit 
+RUN ln -sf /app/.config/.bashrc /root/.bashrc 
+
