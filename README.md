@@ -8,7 +8,7 @@ A simple sandbox with common debugging tools and a mounted `drive/` directory.
 git clone https://github.com/dustinbowers/debug-sandbox
 cd debug-sandbox
 docker compose up --build
-docker compose run sandbox /bin/bash
+./run_shell.sh
 ```
 
 ## Usage
