@@ -25,6 +25,7 @@ The host `drive/` directory is mounted into the container at `/app/drive`
 - `dbg_functions_all <binary>`
 - `dbg_functions_imported <binary>`
 - `dbg_functions_user <binary>`
+- `dbg_elf_sections <binary>`
 
 ### Included Tools
 

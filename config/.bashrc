@@ -50,4 +50,9 @@ dbg_functions_user() {
   rabin2 -qs "$1" | grep -vE 'imp| 0 ';
   set +x;
 }
+dbg_elf_sections() {
+  set -x;
+  readelf -S "$1";
+  set +x;
+}
 
