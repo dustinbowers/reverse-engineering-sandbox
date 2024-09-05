@@ -37,4 +37,5 @@ RUN git clone https://github.com/radareorg/radare2 \
 # Config symlinks
 RUN ln -sf /app/.config/.gdbinit /root/.gdbinit 
 RUN ln -sf /app/.config/.bashrc /root/.bashrc 
+RUN ln -sf /app/.config/.bash_aliases /root/.bash_aliases
 
