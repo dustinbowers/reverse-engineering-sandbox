@@ -2,7 +2,6 @@ version: "3"
 
 services:
   sandbox:
-    privileged: true
     container_name: sandbox
     build:
       context: .
@@ -10,4 +9,5 @@ services:
     volumes:
       - ./drive:/app/drive
       - ./config:/app/.config
+      - ./tools:/tools:ro # Read-only, just in case
 
