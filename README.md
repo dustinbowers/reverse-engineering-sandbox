@@ -36,6 +36,7 @@ The host `drive/` directory is mounted into the container at `/app/drive`
 - [Ropper](https://github.com/sashs/Ropper)
 - [ROPgadget](https://github.com/JonathanSalwan/ROPgadget)
 - [Radare2](https://github.com/radareorg/radare2)
+- [Binsider](https://github.com/orhun/binsider)
 
 ### Libraries
 
