@@ -1,6 +1,8 @@
 #
 # Extra Aliases
 #alias aslr_off_bash='setarch `uname -m` -R /bin/bash'
+
+# These require `privileged: true` in docker-compose.yml
 alias aslr_disable='echo 0 | tee /proc/sys/kernel/randomize_va_space'
 alias aslr_enable='echo 2 | tee /proc/sys/kernel/randomize_va_space'
 
