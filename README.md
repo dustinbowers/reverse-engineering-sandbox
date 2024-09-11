@@ -11,6 +11,22 @@ docker compose up --build
 ./run_shell.sh
 ```
 
+### Included Tools & Libraries
+
+**Tools:**
+- build-essential
+- [GDB](https://sourceware.org/gdb/)
+  - [Pwndbg](https://github.com/pwndbg/pwndbg)
+  - [PEDA](https://github.com/longld/peda)
+- [Ropper](https://github.com/sashs/Ropper)
+- [ROPgadget](https://github.com/JonathanSalwan/ROPgadget)
+- [Radare2](https://github.com/radareorg/radare2)
+- [Binsider](https://github.com/orhun/binsider)
+
+**Libraries:**
+- [pwntools](https://docs.pwntools.com/en/stable/)
+
+
 ## Usage
 
 - Build: `docker compose up --build`  
@@ -27,17 +43,3 @@ The host `drive/` directory is mounted into the container at `/app/drive`
 - `dbg_functions_user <binary>`
 - `dbg_elf_sections <binary>`
 
-### Included Tools
-
-- build-essential
-- [GDB](https://sourceware.org/gdb/)
-- [Pwndbg](https://github.com/pwndbg/pwndbg) extension for GDB
-- [PEDA](https://github.com/longld/peda) extension for GDB
-- [Ropper](https://github.com/sashs/Ropper)
-- [ROPgadget](https://github.com/JonathanSalwan/ROPgadget)
-- [Radare2](https://github.com/radareorg/radare2)
-- [Binsider](https://github.com/orhun/binsider)
-
-### Libraries
-
-- [pwntools](https://docs.pwntools.com/en/stable/)
