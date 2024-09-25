@@ -22,4 +22,3 @@ alias dbg_help='cat ~/.bash_aliases'
 
 # Helpful debug aliases are in here
 source ~/.bash_aliases
-. "$HOME/.cargo/env"
