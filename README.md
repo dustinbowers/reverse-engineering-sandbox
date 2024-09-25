@@ -1,19 +1,35 @@
 # Debugging Sandbox
 
-A simple sandbox with common debugging tools and a mounted `drive/` directory.
+A simple sandbox with common debugging tools and a mounted `drive/` directory
 
-### Quick Start
+## Quick Start
+
+*Note:* There are two different containers that can be used: the normal version, and a 'full' version with more tools available
 
 ```
 git clone https://github.com/dustinbowers/debug-sandbox
 cd debug-sandbox
-docker compose up --build
+./build.sh
 ./run_shell.sh
 ```
 
-### Included Tools & Libraries
+## Usage
 
-**Tools:**
+The included scripts can be used to build and drop into a shell of the chosen sandbox container.  
+#### Normal version  
+- This includes most of the tools and libraries listed below
+- Build the container: `./build.sh`
+- Drop into a container shell with `./run_shell.sh`
+
+#### Full version  
+- This includes everything in the normal version, and includes: angr, claripy, unicorn-engine, and keystone-engine
+- ***Note:*** the resultant container image is larger, and takes longer to build
+- Build the container: `./build_full.sh`
+- Drop into a container shell with `./run_shell_full.sh`
+
+## Included Tools & Libraries
+
+#### Tools:
 - build-essential
 - [GDB](https://sourceware.org/gdb/)
   - [Pwndbg](https://github.com/pwndbg/pwndbg)
@@ -23,18 +39,14 @@ docker compose up --build
 - [Radare2](https://github.com/radareorg/radare2)
 - [Binsider](https://github.com/orhun/binsider)
 
-**Libraries:**
+#### Libraries:
 - [pwntools](https://docs.pwntools.com/en/stable/)
+- (Full) [Angr](https://angr.io/)
+- (Full) [Unicorn Engine](https://github.com/unicorn-engine/unicorn)
+- (Full) [Claripy](https://github.com/angr/claripy)
+- (Full) [Keystone-Engine](https://www.keystone-engine.org/)
 
-
-## Usage
-
-- Build: `docker compose up --build`  
-- Run: `./run_shell.sh` (wrapper for `docker compose run sandbox /bin/bash`)  
-  
-The host `drive/` directory is mounted into the container at `/app/drive`
-
-### Helpful aliases
+## Helpful aliases
 
 - `dbg_protections <binary>`
 - `dbg_strings <binary>`
