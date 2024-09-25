@@ -11,3 +11,13 @@ services:
       - ./config:/app/.config
       - ./tools:/tools:ro # Read-only, just in case
 
+  sandbox-full:
+    container_name: sandbox-full
+    build:
+      context: .
+      dockerfile: full.Dockerfile
+    volumes:
+      - ./drive:/app/drive
+      - ./config:/app/.config
+      - ./tools:/tools:ro # Read-only, just in case
+
