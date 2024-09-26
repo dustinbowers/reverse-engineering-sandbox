@@ -22,7 +22,7 @@ The included scripts can be used to build and drop into a shell of the chosen sa
 - Drop into a container shell with `./run_shell.sh`
 
 #### Full version  
-- This includes everything in the normal version, and includes: angr, claripy, unicorn-engine, and keystone-engine
+- This includes everything in the normal version, and also includes: angr, claripy, unicorn-engine, and keystone-engine
 - ***Note:*** the resultant container image is larger, and takes longer to build
 - Build the container: `./build_full.sh`
 - Drop into a container shell with `./run_shell_full.sh`
