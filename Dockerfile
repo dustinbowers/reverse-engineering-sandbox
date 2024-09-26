@@ -65,7 +65,7 @@ RUN apt-get install -y \
        python3-dev \
        libglib2.0-dev
 
-# Install capstone, keystone-engine, and other Python dependencies
+# Install keystone-engine, angr, and claripy
 RUN pip3 install --no-cache-dir \
     keystone-engine \
     angr \
