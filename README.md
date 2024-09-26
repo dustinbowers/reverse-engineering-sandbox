@@ -1,6 +1,8 @@
 # Debugging Sandbox
 
-A simple sandbox with common debugging tools and a mounted `drive/` directory
+A simple sandbox with common debugging tools and a mounted `drive/` directory  
+
+(This sandbox is based `FROM python` image, which is currently using Ubuntu 5.15 x86_64)
 
 ## Quick Start
 
@@ -12,6 +14,9 @@ cd debug-sandbox
 ./build.sh
 ./run_shell.sh
 ```
+## Requirements
+
+[Docker](https://www.docker.com/) must be installed
 
 ## Usage
 
