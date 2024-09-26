@@ -16,6 +16,9 @@ cd debug-sandbox
 ## Usage
 
 The included scripts can be used to build and drop into a shell of the chosen sandbox container.  
+
+The host `drive/` directory is mounted in the container at `/app/drive`
+
 #### Normal version  
 - This includes most of the tools and libraries listed below
 - Build the container: `./build.sh`
