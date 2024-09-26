@@ -5,9 +5,15 @@
 # PS1='${debian_chroot:+($debian_chroot)}\h:\w\$ '
 # umask 022
 
-# You may uncomment the following lines if you want `ls' to be colorized:
+# Set the default shell to bash
+export SHELL=/bin/bash
+
+# Source dircolors if available
+if command -v dircolors > /dev/null 2>&1; then
+    eval "$(dircolors -b)"
+fi
+
 export LS_OPTIONS='--color=auto'
-eval "$(dircolors)"
 alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -FGlAhp'
 alias l='ls $LS_OPTIONS -lA'
