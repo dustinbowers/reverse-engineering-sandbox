@@ -1,3 +1,7 @@
+#
+# NOTE: These extension cannot be used together
+#
+
 # Uncomment to use the pwndbg extension
 #source /app/pwndbg/gdbinit.py
 
