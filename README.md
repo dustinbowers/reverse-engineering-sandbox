@@ -54,7 +54,7 @@ The host `drive/` directory is mounted in the container at `/app/drive`
 - (Full) [Claripy](https://github.com/angr/claripy)
 - (Full) [Keystone-Engine](https://www.keystone-engine.org/)
 
-## Helpful aliases
+## Helpful Aliases
 
 | Alias                        | Command                                                    |
 |------------------------------|------------------------------------------------------------|
@@ -64,6 +64,6 @@ The host `drive/` directory is mounted in the container at `/app/drive`
 | `dbg_functions_imported <file>` | `rabin2 -i <file>`                                     |
 | `dbg_functions_user <file>`   | `rabin2 -qs <file> \| grep -vE 'imp\| 0 '`                |
 | `dbg_elf_sections <file>`     | `readelf -S <file>`                                        |
-| `dbg_objdump_disassemble() <file>` | `objdump -Mintel -d <file>`                         |
+| `dbg_objdump_disassemble <file>` | `objdump -Mintel -d <file>`                         |
 
 
