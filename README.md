@@ -16,7 +16,7 @@ cd debug-sandbox
 ```
 ## Requirements
 
-[Docker](https://www.docker.com/) must be installed
+- Install [Docker](https://www.docker.com/)
 
 ## Usage
 
