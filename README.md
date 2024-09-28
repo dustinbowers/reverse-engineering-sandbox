@@ -1,4 +1,4 @@
-# Debugging Sandbox
+# Reverse Engineering Sandbox
 
 A simple sandbox with common debugging tools and a mounted `drive/` directory  
 
