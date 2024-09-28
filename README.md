@@ -56,10 +56,14 @@ The host `drive/` directory is mounted in the container at `/app/drive`
 
 ## Helpful aliases
 
-- `dbg_protections <binary>`
-- `dbg_strings <binary>`
-- `dbg_functions_all <binary>`
-- `dbg_functions_imported <binary>`
-- `dbg_functions_user <binary>`
-- `dbg_elf_sections <binary>`
+| Alias                        | Command                                                    |
+|------------------------------|------------------------------------------------------------|
+| `dbg_protections <file>`      | `rabin2 -I <file>`                                         |
+| `dbg_strings <file>`          | `rabin2 -z <file>`                                         |
+| `dbg_functions_all <file>`    | `rabin2 -qs <file>`                                        |
+| `dbg_functions_imported <file>` | `rabin2 -i <file>`                                     |
+| `dbg_functions_user <file>`   | `rabin2 -qs <file> \| grep -vE 'imp\| 0 '`                |
+| `dbg_elf_sections <file>`     | `readelf -S <file>`                                        |
+| `dbg_objdump_disassemble() <file>` | `objdump -Mintel -d <file>`                         |
+
 
