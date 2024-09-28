@@ -26,14 +26,14 @@ The host `drive/` directory is mounted in the container at `/app/drive`
 
 #### Normal version  
 - This includes most of the tools and libraries listed below
-- Build the container: `./build.sh`
-- Drop into a container shell with `./run_shell.sh`
+- Build the container: `./build.sh` (or run `docker compose build sandbox`)
+- Drop into a container shell with `./run_shell.sh` (or run `docker compose sandbox /bin/bash`)
 
 #### Full version  
 - This includes everything in the normal version, and also includes: angr, claripy, unicorn-engine, and keystone-engine
 - ***Note:*** the resultant container image is larger, and takes longer to build
-- Build the container: `./build_full.sh`
-- Drop into a container shell with `./run_shell_full.sh`
+- Build the container: `./build_full.sh` (or run `docker compose build sandbox-full`)
+- Drop into a container shell with `./run_shell_full.sh` (or run `docker compose run sandbox-full /bin/bash`)
 
 ## Included Tools & Libraries
 
