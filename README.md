@@ -2,7 +2,7 @@
 
 A simple Docker container sandbox with common reverse-engineering and debugging tools
 
-(The base image is `FROM python`, which is using Ubuntu 5.15 x86_64)
+(The base image is `FROM python`, which is using Ubuntu 5.15 x86_64 as of Oct 2024)
 
 ## Requirements
 
