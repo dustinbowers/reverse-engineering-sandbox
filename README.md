@@ -1,12 +1,16 @@
 # Reverse Engineering Sandbox
 
-A simple sandbox with common debugging tools and a mounted `drive/` directory  
+A simple Docker container sandbox with common reverse-engineering and debugging tools
 
-(This sandbox is based `FROM python` image, which is currently using Ubuntu 5.15 x86_64)
+(The base image is `FROM python`, which is using Ubuntu 5.15 x86_64 as of Oct 2024)
+
+## Requirements
+
+- Install [Docker](https://www.docker.com/)
 
 ## Quick Start
 
-*Note:* There are two different containers that can be used: the normal version, and a 'full' version with more tools available
+*Note:* There are two different containers that can be used: the normal version, and a *full* version with more tools available
 
 ```
 git clone https://github.com/dustinbowers/debug-sandbox
@@ -14,9 +18,6 @@ cd debug-sandbox
 ./build.sh
 ./run_shell.sh
 ```
-## Requirements
-
-[Docker](https://www.docker.com/) must be installed
 
 ## Usage
 
@@ -49,10 +50,10 @@ The host `drive/` directory is mounted in the container at `/app/drive`
 
 #### Libraries:
 - [pwntools](https://docs.pwntools.com/en/stable/)
-- (Full) [Angr](https://angr.io/)
-- (Full) [Unicorn Engine](https://github.com/unicorn-engine/unicorn)
-- (Full) [Claripy](https://github.com/angr/claripy)
-- (Full) [Keystone-Engine](https://www.keystone-engine.org/)
+- *(Full)* [Angr](https://angr.io/)
+- *(Full)* [Unicorn Engine](https://github.com/unicorn-engine/unicorn)
+- *(Full)* [Claripy](https://github.com/angr/claripy)
+- *(Full)* [Keystone-Engine](https://www.keystone-engine.org/)
 
 ## Helpful Aliases
 
