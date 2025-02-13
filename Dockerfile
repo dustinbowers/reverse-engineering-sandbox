@@ -40,6 +40,11 @@ RUN python3 -m pip install ROPgadget
 # Install radare2
 RUN git clone https://github.com/radareorg/radare2 \
         && radare2/sys/install.sh
+RUN apt-get install -y ninja-build meson
+RUN git clone https://github.com/wargio/r2dec-js \
+        && cd r2dec-js \
+        && meson setup build \
+        && ninja -C build install
 
 # Config symlinks
 RUN ln -sf /app/.config/.gdbinit /root/.gdbinit 
